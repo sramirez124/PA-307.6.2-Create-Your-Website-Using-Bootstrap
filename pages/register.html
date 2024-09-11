@@ -45,13 +45,15 @@
             <input type="text" class="form-control" placeholder="Last Name">
           </div>
 
-        <div class="input-group mb-3">
+        <div class="input-group mb-3 needs-validation" novalidate>
             <span class="input-group-text">@</span>
-            <input type="text" class="form-control" id="Username" placeholder="Username">
+            <input type="text" class="form-control" id="Username" placeholder="Username" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
           </div>
         
           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Your Email">
+            <input type="text" class="form-control" placeholder="Your Email" required>
               <select class="form-select" id="sel1" name="sellist">
                 <option>@gmail.com</option>
                 <option>@outlook.com</option>
@@ -62,12 +64,12 @@
 
           <div class="input-group mb-3">
             <span class="input-group-text">Password</span>
-            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
           </div>
 
           <div class="input-group mb-3">
             <span class="input-group-text">Password</span>
-            <input type="password" class="form-control" id="passwordConfirm" placeholder="Confirm Password">
+            <input type="password" class="form-control" id="passwordConfirm" placeholder="Confirm Password" required>
           </div>
         </div>
 
